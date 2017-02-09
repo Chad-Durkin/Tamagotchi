@@ -1,0 +1,26 @@
+<h1>Interact with @Model.GetName()!</h1>
+
+  <h3>Appetite: @Model.GetAppetite()</h3>
+    <form action="/tamagotchi/feed/@Model.GetId()" method="post">
+      <button id="feed" type="submit" name="button">Feed</button>
+    </form>
+  <h3>Playfulness: @Model.GetPlayfulness()</h3>
+    <form action="/tamagotchi/play/@Model.GetId()" method="post">
+      <button id="play" type="submit" name="button">Play</button>
+    </form>
+  <h3>Energy: @Model.GetEnergy()</h3>
+    <form class="" action="/tamagotchi/rest/@Model.GetId()" method="post">
+      <button id="rest" type="submit" name="button">Rest</button>
+    </form>
+
+  <h3><strong>Instructions</strong></h3>
+  <ul>
+    <li>Feed your tamagotchi to fill up its appetite</li>
+    <li>Play with your tamagotchi to make it happy again</li>
+    <li>When your tamagotchi's energy reaches 0 you must make it rest</li>
+    <li>If any of your tamagotchi's attributes reach below 0, you have to pay the consecquences</li>
+  </ul>
+
+  <a href="/tamagotchi/new">Create your own Tamagotchi</a>
+  <a href="/tamagotchi/all">Check on your Tamagotchi</a>
+  <a href="/">Home</a>
